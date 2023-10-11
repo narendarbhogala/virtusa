@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">20230314-RamyaShanbhag-NYCSchools</string>
+    <string name="not_found">Not found!</string>
+    <string name="error">Error</string>
+    <string name="ok">Ok</string>
+    <string name="name">Name :</string>
+    <string name="reading_avg">Reading Average :</string>
+    <string name="math_avrg">Math Average :</string>
+    <string name="writing_average">Writing Average :</string>
+</resources>

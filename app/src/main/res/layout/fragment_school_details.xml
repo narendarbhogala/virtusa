@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvSchoolNameLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_16dp"
+        android:text="@string/name"
+        android:gravity="left"
+        app:layout_constraintEnd_toStartOf="@+id/tvSchoolName"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSchoolName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_16dp"
+        android:gravity="left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvSchoolNameLabel"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Test" />
+
+    <TextView
+        android:id="@+id/tvReadingAvrgLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_16dp"
+        android:text="@string/reading_avg"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSchoolName" />
+
+    <TextView
+        android:id="@+id/tvReadingAvrg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_16dp"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintLeft_toRightOf="@id/tvReadingAvrgLabel"
+        app:layout_constraintTop_toBottomOf="@id/tvSchoolName"
+        tools:text="Test" />
+
+    <TextView
+        android:id="@+id/tvMathAvrgLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_16dp"
+        android:text="@string/math_avrg"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvReadingAvrg" />
+
+    <TextView
+        android:id="@+id/tvMathAvrg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_16dp"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintLeft_toRightOf="@id/tvMathAvrgLabel"
+        app:layout_constraintTop_toBottomOf="@id/tvReadingAvrg"
+        tools:text="Test" />
+
+    <TextView
+        android:id="@+id/tvWritingAvrgLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_16dp"
+        app:layout_constraintWidth_percent="0.5"
+        android:text="@string/writing_average"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvMathAvrg" />
+
+    <TextView
+        android:id="@+id/tvWritingAvrg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_16dp"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintLeft_toRightOf="@id/tvWritingAvrgLabel"
+        app:layout_constraintTop_toBottomOf="@id/tvMathAvrg"
+        tools:text="Test" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="@dimen/progress_bar_size"
+        android:layout_height="@dimen/progress_bar_size"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
